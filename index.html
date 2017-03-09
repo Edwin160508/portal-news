@@ -2,39 +2,37 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Notícias.com</title>
 
 	<link rel="stylesheet" href="css/estilo.css">
-	<link rel="stylesheet" href="css/layout1.css">
-	<link rel="stylesheet" href="css/layout2.css">
-	<link rel="stylesheet" href="css/layout3.css">
+	<link rel="stylesheet" href="css/exercicios.css">
 </head>
 <body>
 
 	<header>
 		<div class="container">
-			<!-- layout3 -->
-			<button class="menu-controle">Abre menu</button>
+			<button class="menu-abrir">Abrir Menu</button>
+			<h1 class="logo">
+				<img src="img/logo.png" alt="Notícias.com">
+				<a href=""></a>
+			</h1>
 
-			<h1 class="logo"><img src="img/logo.png" alt="Notícias.com"></h1>
+			<nav class="barra-nav">
+				<button class="menu-fechar">Fechar Menu</button>
+				<ul class="menu-principal">
+					<li><a href="noticias.html" class="noticias">Notícias</a>
+					<li><a href="esportes.html" class="esportes">Esportes</a>
+					<li><a href="famosos.html" class="famosos">Famosos</a>
+				</ul>
 
-			
+				<form class="busca">
+					<input type="search" id="campo-busca">
+					<button type="submit">Buscar</button>
+				</form>
+			</nav>
 		</div>
 	</header>
-
-
-	<nav class="menu-principal container">
-		<ul>
-			<li><a href="noticias.html" class="noticias">Notícias</a>
-			<li><a href="esportes.html" class="esportes">Esportes</a>
-			<li><a href="famosos.html" class="famosos">Famosos</a>
-		</ul>
-
-		<form action="busca.html" class="busca">
-			<input type="search" id="campo-busca">
-			<button type="submit">Buscar</button>
-		</form>
-	</nav>
 
 	<main class="destaques container">
 
@@ -77,7 +75,7 @@
 				<h2>Time vencedor sobe para Série A da Copa</h2>
 			</a>
 			<a href="noticia9.html" class="chamada esportes normal">
-				<h2>Transferência milhonária de craque para a Europa</h2>
+				<h2>Transferência milionária de craque para a Europa</h2>
 			</a>
 			<a href="noticia10.html" class="chamada famosos normal">
 				<h2>BBB: brothers vão pra piscina</h2>

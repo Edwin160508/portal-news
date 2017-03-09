@@ -12,32 +12,21 @@
 body {
 	font-family: Arial, helvetica, sans-serif;
 	line-height: 1.4;
-	padding-top: 4.5em;
 }
 
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
-
-	background: white;
+	background: #f0f0f0;
 	width: 100%;
 }
-	.logo {
-		display: inline-block;
-		vertical-align: middle;
-		margin: 0.7em 1.6em 0.7em 0;
-	}
+.logo img {
+	display: block;
+}
 
 /* busca */
 .busca {
-	overflow: hidden;
-	margin: 0.5em 0;
-	width: 100%;
+	overflow: hidden; /* clearfix */
 }
 	.busca input {
-
 		border: 1px solid #CCC;
 		border-bottom-color: #aaa;
 		border-right-width: 0;
@@ -49,6 +38,7 @@ header {
 		padding: 0 0.16em;
 
 		float: left;
+		-webkit-appearance: none;
 	}
 	.busca button {
 		background: #f0f0f0;
@@ -76,6 +66,7 @@ header {
 .noticias {
 	color: #ca0000;
 }
+
 .esportes {
 	color: #3ea909;
 }
@@ -83,46 +74,9 @@ header {
 	color: #ff7f00;
 }
 
-/* menu */
 .menu-principal {
-	border: 1px solid #eee;
-	border-left: 0;
-	border-right: 0;
-
-	font-size: 1em;
 	font-weight: bold;
-
-	margin-bottom: 1em;
-}
-
-	.menu-controle {
-		background: none;
-		border: 0;
-		outline: 0;
-	    -webkit-appearance: none;
-		text-indent: -999em;
-
-	    font-size: 1.6em;
-	    height: 0;
-	    width:.75em;
-	    padding-top:.125em;
-	    border-top: .375em double #000;
-	    border-bottom: .125em solid #000;
-
-		display: inline-block;
-	    margin: 0.3em 0.4em 0.3em 0;
-	    vertical-align: middle;
-	}
-
-	.menu-principal ul {
-		list-style-type: none;
-		overflow: hidden;
-		display: inline-block;
-		vertical-align: middle;
-	}
-	.menu-principal li {
-		padding: 1em 0;
-		float: left;
+	list-style-type: none;
 	}
 	.menu-principal a {
 		display: block;

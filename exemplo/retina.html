@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="exemplos.css">
+	
+	<title>Imagens retina</title>
+	
+	<style>
+	.img {
+		margin: 0 auto;
+		height: 500px;
+		width: 100%;
+		max-width: 500px;
+		background-position: top center;
+	}
+
+	.primeira {
+		background-image: url(retina-1x-80.jpg);
+	}
+
+	.segunda {
+		background-image: url(retina-2x-20.jpg);
+		background-size: 500px 500px;
+	}
+
+	.botao {
+		margin: 1em;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<h1>Dois JPEGs, um 1x e outro 2x (retina)</h1>
+	
+	<div class="img primeira"></div>
+	<div class="img segunda"></div>
+	
+	<div class="botao">
+		<button onclick="document.getElementById('segredo').style.display='block';">Revelar o segredo</button>
+	</div>
+	<div id="segredo" style="display:none">
+		<p>Ambas as imagens têm <b>80 kb</b> de tamanho.</p>
+		<p>A primeira imagem é um JPEG de 500px por 500px, mostrada em 1x. Foi salva com compressão 80.</p>
+		<p>A segunda imagem é um JPEG de 1000px por 1000px, mostrada em 2x. Foi salva com compressão 20.</p>
+		<p>Faça mais testes <a href="http://borismus.github.com/image-zoom/">nessa ferramenta</a>.</p>
+	</div>
+	
+	<div id="qrcode" class="center"></div>
+	
+	
+	<hr>
+	<div class="footer">
+		Exemplo do livro <a href="../">A Web Mobile</a>. Veja o <a href="https://github.com/sergiolopes/blog/blob/master/src/files/livro-web-mobile/exemplos/" id="link-source">código fonte desse exemplo</a>.
+	</div>
+	<script src="script.js" async></script>
+</body>
+</html>
